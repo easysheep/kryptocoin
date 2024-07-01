@@ -1,0 +1,121 @@
+// .loginmain{
+ 
+//     background-color: #6B45FF;
+//     width: 400px;
+//     height: 300px;
+//     border-radius: 10px;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     padding: 20px 20px;
+//     justify-content: space-around;
+//     box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.6);
+//     color: white;
+
+    
+// }
+// .login{
+//     background-color:#dcdcdcad;;
+//     height: 500px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+    
+  
+//   }
+
+// .signout_buttons1{
+//     height: 40px;
+//     width: 60px;
+//     border-radius: 10px;
+//     border: 0;
+//     margin-top: 20px;
+//     cursor: pointer;
+  
+// }
+// .base{
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-around;
+//     align-items: center;
+//     margin-top: 20px;
+// }
+// .l{
+//     display: flex;
+
+//     align-items: center;
+
+// }
+// .login_error{
+
+//     color: white;
+
+// }
+// .error{color: black;}
+// .r{
+//     display: flex;
+
+//     align-items: center;
+
+// }
+
+
+.loginmain {
+    background-color: #6B45FF;
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-around;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.6);
+    color: white;
+}
+
+.login {
+    background-color: #dcdcdcad;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signout_buttons1 {
+    height: 40px;
+    width: 60px;
+    border-radius: 10px;
+    border: 0;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.base {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.l {
+    display: flex;
+    align-items: center;
+}
+
+.login_error {
+    color: white;
+}
+
+.error {
+    color: black;
+}
+
+@media (max-width: 540px) {
+    .loginmain {
+        width: 90vw; /* Adjust width to 90% of viewport width */
+        height: auto; /* Allow height to adjust automatically */
+        padding: 10px;
+    }
+}

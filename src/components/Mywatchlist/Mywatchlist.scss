@@ -1,0 +1,89 @@
+.mywatchlist {
+    height: auto;
+}
+
+.mainlistcont {
+    background-color: #dcdcdcad;
+    min-height: 500px;
+    padding-top: 20px;
+}
+
+.columnshead {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+    width: 100vw;
+}
+
+.columnshead .el1 {
+    font-family: 'Lilita One';
+    font-size: 25px;
+}
+
+.rendered {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.rendered .el {
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto;
+    font-size: 20px; /* Default font size for elements */
+}
+
+.line_list {
+    height: 1px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+    margin: 20px auto;
+}
+
+@media (max-width: 768px) {
+    .columnshead .el1 {
+        font-size: 20px; /* Decrease font size for column headers */
+    }
+
+    .rendered .el {
+        width: 100%; /* Full width for each item */
+        padding: 5px; /* Adjust padding for spacing */
+        font-size: 18px; /* Decrease font size for items */
+    }
+}
+
+@media (max-width: 600px) {
+    .columnshead .el1 {
+        font-size: 18px; /* Further decrease font size for column headers */
+    }
+
+    .rendered .el {
+        font-size: 16px; /* Further decrease font size for items */
+    }
+}
+
+@media (max-width: 480px) {
+    .columnshead .el1 {
+        font-size: 16px; /* Adjust font size for column headers */
+    }
+
+    .rendered .el {
+        font-size: 14px; /* Adjust font size for items */
+    }
+}
+
+@media (max-width: 380px) {
+    .columnshead .el1 {
+        font-size: 14px; /* Adjust font size for column headers */
+    }
+
+    .rendered .el {
+        font-size: 12px; /* Adjust font size for items */
+    }
+}

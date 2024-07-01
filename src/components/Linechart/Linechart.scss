@@ -1,0 +1,19 @@
+.lin1 {
+    width: 800px;
+    height: 400px;
+    margin-bottom: 5px;
+    background-color: white;
+  
+    @media (max-width: 830px) {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 2 / 1;
+    }
+  
+    @media (max-width: 768px) {
+      width: 95%;
+      height: auto;
+      aspect-ratio: 2 / 1;
+    }
+  }
+  

@@ -1,0 +1,14 @@
+.doc{color: black;
+font-size: 15px;
+font-family: 'Montserrat';}
+.document{padding: 20px;}
+
+.hd{
+    font-size: 40px;
+}
+.grayline{
+    width: 95vw;
+    height: 1px;
+    background-color: #979696;
+    margin-top: 8px;
+}

@@ -1,0 +1,185 @@
+@import "../../App.scss";
+.inputbar {
+  justify-content: center;
+  display: flex;
+  padding-top: 65px;
+  background-color: #dcdcdcad;
+}
+input {
+  height: 40px;
+  width: 300px;
+  border-radius: 40px;
+  border: 1px solid #4b4b4b;
+  padding: 0 12px;
+}
+.heading {
+  color: black;
+  height: 55px;
+  padding-top: 15px;
+  display: flex;
+  justify-content: center;
+  background-color: #dcdcdcad;
+  padding-bottom: 8px;
+  font-size: 50px;
+}
+.line {
+  height: 1px;
+  background-color: black;
+  width: 100%;
+  margin-top: 22px;
+  margin-bottom: 15px;
+}
+.namecurr {
+  display: flex;
+  align-items: center;
+  font-family: "Lilita One";
+  font-size: smaller;
+}
+
+.graybox {
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  background-color: #dcdcdc85;
+  @media (max-width: 880px) {
+    height: auto;
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+.otherstats {
+  display: flex;
+  margin: 20px 20px;
+  justify-content: space-between;
+  color: white;
+  @media (max-width: 880px) {
+    height: auto;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+  }
+}
+.otherstatsleft {
+  display: flex;
+  min-width: 390px;
+  background-color: #6b45ff;
+  border-radius: 15px;
+  padding: 10px;
+  flex-direction: column;
+  height: 200px;
+  justify-content: space-evenly;
+  @media (max-width: 460px) {
+    min-width: 85%; /* Adjust width to fit smaller screens */
+    height: auto; /* Allow height to expand with content */
+  }
+}
+.otherstatsright {
+  display: flex;
+  min-width: 390px;
+  background-color: #6b45ff;
+  border-radius: 15px;
+  flex-direction: column;
+  padding: 10px;
+  height: 200px;
+  justify-content: space-evenly;
+  @media (max-width: 460px) {
+    min-width: 85%; /* Adjust width to fit smaller screens */
+    height: auto; /* Allow height to expand with content */
+  }
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.col1, .col2 {
+  font-weight: 200;
+  font-size: 25px;
+  @media (max-width: 460px) {
+    font-size: 20px; /* Decrease font size for smaller screens */
+  }
+}
+
+.col1 {
+  font-weight: 500;
+}
+
+span {
+  height: 10px;
+}
+
+.statheading {
+  display: flex;
+  color: black;
+  justify-content: center;
+  font-family: "Lilita One";
+  font-size: 40px;
+  padding: 0 30px;
+}
+.chart {
+  position: relative; /* Needed to position the icon absolutely within this container */
+  display: flex;
+  justify-content: center;
+  background-color: #6b45ff;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+.icon {
+  position: absolute; /* Position the icon absolutely within the .chart container */
+  top: 10px; /* Adjust top position as needed */
+  right: 10px; /* Adjust right position as needed */
+  color: #f7931a;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.btngroup {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+  background-color: #6b45ff;
+  padding: 10px 0;
+  max-width: 100vw; /* Adjust this value as needed */
+  margin: 0 auto;
+  padding-left: 20px;
+}
+
+.timebtn {
+  width: 100px;
+  background-color: white;
+  border-radius: 15px;
+  border: 0;
+  cursor: pointer;
+  height: 25px;
+}
+.linkh2 {
+  color: black;
+}
+.smth {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+}
+.msg {
+  padding: 40px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  width: 100vw;
+  font-size: 50px;
+}
+.purple {
+  color: #6b45ff;
+}
+
+.currimg-icon {
+  height: 40px;
+}
+.currimg {
+  display: flex;
+  align-items: center;
+}
+
+.whole {
+  height: auto;
+}

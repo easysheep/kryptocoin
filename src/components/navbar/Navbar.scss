@@ -1,0 +1,180 @@
+@import "../../App.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6b45ff;
+  height: 72px;
+  color: white;
+  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.5);
+  padding: 0 15px;
+  position: relative;
+  z-index: 1001; /* Ensure navbar stays on top */
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.right {
+  display: flex;
+  gap: 10px;
+  margin-right: 30px;
+  justify-content: flex-end;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-grow: 1;
+}
+
+li {
+  position: relative;
+  margin-right: 32px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.logoimg {
+  height: 45px;
+}
+
+.title {
+  margin-right: 35px;
+}
+
+.btn1 {
+  height: 45px;
+  width: 85px;
+  border-radius: 25px;
+  background-color: #6b45ff;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+  margin: auto;
+}
+
+.btn2 {
+  height: 45px;
+  width: 85px;
+  border-radius: 25px;
+  color: #6b45ff;
+  border: 1px solid #6b45ff;
+  cursor: pointer;
+  margin: auto;
+}
+
+.explore {
+  text-decoration: none;
+  color: white;
+}
+
+.explore2 {
+  text-decoration: none;
+  align-items: center;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
+.profile {
+  cursor: pointer;
+  position: relative;
+}
+
+.dropdown-content {
+  display: flex;
+  position: absolute;
+  background-color: #ffffff;
+  color: black;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  flex-direction: column;
+  right: 18px;
+  top: 8%;
+  height: 50px;
+  padding: 15px;
+  align-items: center;
+  gap: 15px;
+  padding-top: 10px;
+}
+
+.explore3 {
+  text-decoration: none;
+  color: white;
+  transition: transform 0.3s ease;
+  display: flex;
+  gap: 5px;
+}
+
+.explore3:hover {
+  scale: 1.1;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  z-index: 1002; /* Ensure hamburger menu stays on top */
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .right {
+    display: none;
+  }
+
+  .right.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 72px; /* Offset by the height of the navbar */
+    left: 0;
+    width: 100%;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    overflow-y: auto;
+    height: calc(100vh - 72px);
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+
+    .btn1 {
+      background-color: #7b5bfd;
+    }
+  }
+
+  .right {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  li {
+    margin: 20px 0;
+  }
+}

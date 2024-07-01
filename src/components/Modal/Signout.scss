@@ -1,0 +1,49 @@
+.signout{
+    background-color:#dcdcdcad;;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.signout_main{
+    background-color: #6B45FF;
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 20px;
+    justify-content: space-around;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.6);
+    
+}
+.head{
+    color: white;
+    font-size: 50px;
+
+}
+.signout_buttons{
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    border: 0;
+    margin-top: 20px;
+    cursor: pointer;
+
+}
+.twob1{
+    display: flex;
+    gap: 20px;
+    justify-content: center;    
+}
+
+@media (max-width: 540px) {
+    .signout_main {
+        width: 85vw; /* Adjust width to 90% of viewport width */
+        height: auto; /* Allow height to adjust automatically */
+        padding: 10px;
+    }
+}

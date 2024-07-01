@@ -1,0 +1,11 @@
+@import "../../App.scss";
+.message{
+    color: black;
+    background-color: #dcdcdcad;
+    display: flex;
+    justify-content: center;
+    @include mobile {
+        margin: auto;
+    }
+
+}

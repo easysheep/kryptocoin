@@ -1,0 +1,87 @@
+
+.hottodaycont {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
+    background-color: #dcdcdcad;
+}
+
+.header {
+    font-size: 55px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Lilita One';
+}
+
+.gainh, .lossh {
+    font-family: 'Lilita One';
+    font-size: 30px;
+    padding-left: 10px;
+}
+
+.cardsection {
+    margin: 0 auto;
+    background-color: #6B45FF;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+    width: 96vw;
+    position: relative;
+    padding: 10px;
+    height: auto; /* Ensure the parent element height adjusts automatically */
+}
+
+.cards {
+    color: black;
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    border: 0;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.427);
+    transition: box-shadow 0.3s ease;
+    border-radius: 10px;
+}
+
+.cards:hover {
+    box-shadow: 16px 16px 32px rgba(0, 0, 0, 0.472);
+}
+
+.toplosers, .topgainers {
+    padding-top: 15px;
+}
+
+.space {
+    height: 45px;
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .cardsection {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, auto); /* Create two rows */
+        grid-gap: 20px 20px; /* Add gap between rows */
+        height: auto; /* Ensure the parent element height adjusts automatically */
+    }
+
+    .cardsection .cards:nth-child(4),
+    .cardsection .cards:nth-child(5) {
+        grid-column: span 1;
+    }
+}
+
+@media (max-width: 540px) {
+    .cardsection {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr); /* Create three rows */
+        grid-gap: 20px 20px; /* Add gap between rows */
+        height: auto; /* Ensure the parent element height adjusts automatically */
+    }
+
+    .cardsection .cards:nth-child(5) {
+        grid-column: span 2; /* Make the last card span both columns */
+    }
+}
+
+

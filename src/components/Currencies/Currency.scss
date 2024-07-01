@@ -1,0 +1,161 @@
+@import "../../App.scss";
+
+.Currency {
+    background-color: #dcdcdc85;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    @include large {
+        height: auto;
+    }
+}
+
+.box {
+    background-color: #dcdcdc99;
+    width: 95vw;
+    min-height: 550px;
+    display: flex;
+    @include large {
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+.leftbox {
+    width: 50vw;
+    @include large {
+        width: 100vw;
+    }
+}
+
+.rightbox {
+    width: 50vw;
+    display: grid;
+    grid-template-rows: 220px 220px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    @include large {
+        width: 100vw;
+        height: 630px;
+        justify-content: center;
+
+    }
+    @include mobile {
+        justify-content: center;
+        margin: auto;
+    }
+}
+
+.card-box {
+    display: grid;
+    grid-template-rows: 220px 220px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    width: 45vw;
+    top: 20%;
+    position: relative;
+    @include large {
+        width: 95vw;
+    }
+    @include mobile {
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 180px 180px 180px;
+        justify-content: center;
+    }
+}
+
+.currencytext {
+    position: relative;
+    top: 5%;
+    right: -5%;
+    @include large {
+        height: auto;
+    }
+}
+
+.span {
+    display: flex;
+    height: 50px;
+}
+
+.h2 {
+    font-size: 60px;
+    font-family: monospace;
+    color: black;
+    @include mobile {
+        font-size: 50px;
+
+        @include small {
+            font-size: 40px;
+
+            @media (max-width: 480px) {
+                font-size: 35px;
+            }
+
+            @media (max-width: 360px) {
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+.h3 {
+    font-size: 30px;
+    color: #6b45ff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    @include mobile {
+        font-size: 25px;
+
+        @include small {
+            font-size: 20px;
+
+            @media (max-width: 480px) {
+                font-size: 18px;
+            }
+
+            @media (max-width: 360px) {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.card {
+    color: black;
+    border: 1px solid #333;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    border: 0;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.427); /* Adjust the values as needed */
+    transition: box-shadow 0.3s ease;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease;
+
+    @include mobile {
+        padding: 10px;
+        font-size: 14px;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.427); /* Adjust the values for mobile */
+    }
+}
+
+.card:hover {
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.472); /* Adjust the values for the hover effect */
+}
+
+.iconimg {
+    height: 50px;
+    width: 50px;
+}
+
+.btn3 {
+    height: 40px;
+    width: 100px;
+    background-color: #000000;
+    color: white;
+    border: 1px solid white;
+    border-radius: 8px;
+}
