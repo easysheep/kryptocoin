@@ -1,3 +1,5 @@
+
+
 @import "../../App.scss";
 
 .Currency {
@@ -6,7 +8,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100vw;
+    width: 100%; // Changed from 100vw to 100%
+    overflow: hidden; // Prevent overflow
     @include large {
         height: auto;
     }
@@ -14,7 +17,7 @@
 
 .box {
     background-color: #dcdcdc99;
-    width: 95vw;
+    width: 95%; // Changed from 95vw to 95%
     min-height: 550px;
     display: flex;
     @include large {
@@ -24,24 +27,29 @@
 }
 
 .leftbox {
-    width: 50vw;
+    width: 50%;
+    padding-left: 10px;
     @include large {
-        width: 100vw;
+        width: 100%;
     }
 }
 
 .rightbox {
-    width: 50vw;
-    display: grid;
+    width: 50%;
+    display: flex;
+    justify-content: center; // Centering content
+    align-items: center;
+    flex-wrap: wrap; // Allow content to wrap if necessary
     grid-template-rows: 220px 220px;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
+
     @include large {
-        width: 100vw;
+        width: 100%;
         height: 630px;
         justify-content: center;
-
     }
+
     @include mobile {
         justify-content: center;
         margin: auto;
@@ -50,27 +58,27 @@
 
 .card-box {
     display: grid;
-    grid-template-rows: 220px 220px;
+    grid-template-rows: 210px 210px;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
-    width: 45vw;
-    top: 20%;
-    position: relative;
+    width: 100%; // Full width of the parent
+
     @include large {
-        width: 95vw;
+        width: 90vw;
     }
+
     @include mobile {
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 180px);
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 180px 180px 180px;
         justify-content: center;
     }
+
+    max-width: 90vw; // Set maximum width to align properly
+    margin: auto; // Center the card-box
+    box-sizing: border-box;
 }
 
 .currencytext {
-    position: relative;
-    top: 5%;
-    right: -5%;
     @include large {
         height: auto;
     }
@@ -85,6 +93,7 @@
     font-size: 60px;
     font-family: monospace;
     color: black;
+    width: auto;
     @include mobile {
         font-size: 50px;
 
@@ -92,11 +101,11 @@
             font-size: 40px;
 
             @media (max-width: 480px) {
-                font-size: 35px;
+                font-size: 30px;
             }
 
             @media (max-width: 360px) {
-                font-size: 30px;
+                font-size: 25px;
             }
         }
     }

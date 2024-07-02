@@ -38,11 +38,11 @@ const Currency = () => {
             <div className="box">
                 <div className="leftbox">
                     <div className="currencytext">
-                        <h2 className='h2'>Explore most popular and</h2>
-                        <h2 className='h2'>stable cryptos</h2>
+                        <div className='h2'>Explore most popular and</div>
+                        <div className='h2'>stable cryptos</div>
                         <span className='span'></span>
-                        <h3 className='h3'>Like Bitcoin,Ethereum,Dogecoin,Solana</h3>
-                        <h3 className='h3'>and hundred of other digital currencies</h3>
+                        <div className='h3'>Like Bitcoin,Ethereum,Dogecoin,Solana</div>
+                        <div className='h3'>and hundred of other digital currencies</div>
                         <button className='btn3'><Link to="/details" style={{ color: 'white', textDecoration: 'none' }}>Explore More</Link></button>
                     </div>
 
@@ -77,3 +77,5 @@ const Currency = () => {
 }
 
 export default Currency;
+
+
